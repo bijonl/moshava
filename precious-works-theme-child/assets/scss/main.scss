@@ -1,6 +1,6 @@
 // Import parent SCSS
-@import '../../../precious-works-parent/assets/scss/variables';
-@import '../../../precious-works-parent/assets/scss/block-variables';
+@import '../../../precious-works-theme-child/assets/scss/variables';
+@import '../../../precious-works-theme-child/assets/scss/block-variables';
 @import '../../../precious-works-parent/assets/scss/admin-overrides';
 @import '../../../precious-works-parent/assets/scss/bootstrap';
 @import '../../../precious-works-parent/assets/scss/util';
@@ -23,7 +23,7 @@
 @import '../../../precious-works-parent/assets/scss/blocks/reviews-block';
 @import '../../../precious-works-parent/assets/scss/blocks/recent-posts';
 @import '../../../precious-works-parent/assets/scss/blocks/accordions';
-@import '../../../precious-works-parent/assets/scss/blocks/homepage-hero';
+@import '../../../precious-works-theme-child/assets/scss/blocks/homepage-hero';
 @import '../../../precious-works-parent/assets/scss/blocks/photo-divider';
 @import '../../../precious-works-parent/assets/scss/blocks/image-gallery';
 @import '../../../precious-works-parent/assets/scss/blocks/interior-hero';

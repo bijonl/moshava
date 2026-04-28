@@ -21,6 +21,35 @@
             "endpoint": 0
         },
         {
+            "key": "field_69f0ba76dfdf6",
+            "label": "Hero Format",
+            "name": "hero_format",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "regular": "Regular Hero",
+                "split": "Split Hero"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_687d2c0f162f4",
             "label": "Background",
             "name": "background",
@@ -28,7 +57,15 @@
             "type": "select",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_69f0ba76dfdf6",
+                        "operator": "==",
+                        "value": "regular"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -64,6 +101,54 @@
                         "field": "field_687d2c0f162f4",
                         "operator": "==",
                         "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_69f0ba76dfdf6",
+                        "operator": "==",
+                        "value": "split"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_69f0ba76dfdf6",
+                        "operator": "==",
+                        "value": "regular"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_69f0bab9dfdf8",
+            "label": "Second Column Image",
+            "name": "second_column_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "<p>Upload a large, wide image that looks good behind text.<\/p>\r\n\r\n<ul>\r\n  <li><strong>Use a clear, high-quality image<\/strong><\/li>\r\n  <li><strong>Make sure it’s wide<\/strong> (like a banner)<\/li>\r\n  <li><strong>Choose something simple<\/strong>—not too busy<\/li>\r\n<\/ul>\r\n\r\n<p><em>Good examples:<\/em> sky, landscape, texture, wall, etc.<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_69f0ba76dfdf6",
+                        "operator": "==",
+                        "value": "split"
                     }
                 ]
             ],
@@ -121,5 +206,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753034028
+    "modified": 1777384244
 }

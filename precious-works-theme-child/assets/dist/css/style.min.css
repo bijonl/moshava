@@ -27,6 +27,10 @@
   margin: 24px 0 8px !important;
 }
 
+.media-modal .media-frame .media-search-input-label {
+  color: black;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -6979,8 +6983,27 @@ progress {
     display: none !important;
   }
 }
-.wysiwyg p:last-child() {
+.wysiwyg p:last-child {
   margin-bottom: 0;
+}
+
+.nav-list-style {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-list-style.column-list {
+  flex-direction: column;
+}
+.nav-list-style li {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.nav-list-style li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .rounded-corners {
@@ -7002,11 +7025,11 @@ progress {
 }
 
 .heading-font {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .body-text-font {
-  font-family: "Georgia", serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .u-focus-style:focus, .u-focus-style:focus-visible {
@@ -7037,8 +7060,8 @@ progress {
 
 .pw-solid-button {
   display: inline-block;
-  background-color: #333333;
-  border: solid 1px #333333;
+  background-color: #0a4d0f;
+  border: solid 1px #0a4d0f;
   color: #ffffff;
   line-height: 1;
   border-radius: 30px;
@@ -7055,8 +7078,8 @@ progress {
   font-weight: 600;
   border-radius: 30px;
   background-color: #ffffff;
-  color: #333333;
-  border: solid 1px #333333;
+  color: #0a4d0f;
+  border: solid 1px #0a4d0f;
   text-decoration: none;
 }
 .pw-solid-button:focus, .pw-solid-button:focus-visible {
@@ -7108,7 +7131,7 @@ progress {
 
 body {
   background-color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #222;
@@ -7130,42 +7153,42 @@ html :where(.wp-block) {
 }
 
 h1, .h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3, .h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h4, .h4 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h5, .h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h6, .h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
@@ -7199,7 +7222,7 @@ ul li, ol li {
 }
 
 blockquote {
-  font-family: "Georgia", serif;
+  font-family: "Playfair Display", sans-serif;
   font-style: italic;
   margin: 1.5em 0;
   padding-left: 1em;
@@ -7573,7 +7596,7 @@ small, .small {
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .review-content blockquote {
   all: unset;
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -7593,7 +7616,7 @@ small, .small {
 }
 
 .accordions-container .accordions-row .accordions-col .single-accordion {
-  border: 2px solid #666666;
+  border: 2px solid #D6CC11;
   margin-bottom: 20px;
   color: inherit;
   overflow: hidden;
@@ -7613,7 +7636,7 @@ small, .small {
   transition: background-color 0.25s ease;
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion:hover {
-  background-color: rgb(216.75, 216.75, 216.75);
+  background-color: rgb(251.3571428571, 249.2142857143, 209.1428571429);
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion svg {
   transition: transform 0.25s ease;
@@ -7648,9 +7671,36 @@ small, .small {
   opacity: 0.5;
   z-index: 1;
 }
+.homepage-hero-section .split-hero-bg-container .split-column-bg.second-image {
+  left: auto;
+}
 .homepage-hero-section .homepage-hero-container {
   z-index: 2;
   position: relative;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .overlay {
+  opacity: 0.9;
+  background-color: #0a4d0f;
+  border-radius: 25px;
+  border: solid 7px #D6CC11;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .homepage-hero-content-wrapper {
+  padding: 50px;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .title-area-container {
+  z-index: 9;
+  position: relative;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .title-area-container .subtitle-wrapper {
+  font-size: 32px;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .button-area-wrapper {
+  z-index: 9;
+  position: relative;
+}
+.homepage-hero-section .homepage-hero-container.split-hero .button-area-wrapper a {
+  background-color: #D6CC11;
+  color: rgb(10, 58, 5);
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
   padding-bottom: 30px;

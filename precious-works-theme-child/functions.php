@@ -39,5 +39,12 @@ add_action( 'wp_enqueue_scripts', 'pw_enqueue_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
 
-
-
+function moshava_enqueue_fonts() {
+    wp_enqueue_style(
+        'mytheme-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap',
+        array(),
+        null
+    );
+}
+add_action('wp_enqueue_scripts', 'moshava_enqueue_fonts');
