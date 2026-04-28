@@ -48,16 +48,16 @@ $solid-button-border-color-hover: $color-primary;
 
 // Footer Variables
 $footer-padding: 30px; 
-$footer-background-color: black; 
+$footer-background-color: $color-primary; 
 $footer-color: white; 
 
 // ===============================
 // Header Variables
 // ===============================
-$header-background: white;
-$header-logo-width: 65px;
+$header-background: $color-primary;
+$header-logo-width: 200px;
 $header-logo-height: auto;
-$header-link-color: inherit;
+$header-link-color: $color-secondary;
 $header-mobile-menu-bg: #eceff1;
 $header-mobile-menu-hover-bg: #cfd8dc;
 $header-mobile-menu-link-color: #333;

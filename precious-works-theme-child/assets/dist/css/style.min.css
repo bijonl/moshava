@@ -7386,7 +7386,7 @@ small, .small {
 }
 
 .site-header {
-  background-color: white;
+  background-color: #0a4d0f;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -7401,7 +7401,7 @@ small, .small {
   align-items: center;
 }
 .site-header .site-header-container .site-header-row .site-header-logo-col .site-brand-logo-wrapper {
-  width: 65px;
+  width: 200px;
   height: auto;
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav,
@@ -7420,8 +7420,9 @@ small, .small {
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav a,
 .site-header .site-header-container .site-header-row .header-menu-col nav a {
-  color: inherit;
+  color: #D6CC11;
   text-decoration: none;
+  font-size: 18px;
 }
 .site-header .site-header-container .site-header-row .header-menu-col {
   display: none;
@@ -7535,7 +7536,7 @@ small, .small {
 .site-footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: black;
+  background-color: #0a4d0f;
   color: white;
 }
 .site-footer .site-footer-content-container .site-footer-content-row .social-list {
