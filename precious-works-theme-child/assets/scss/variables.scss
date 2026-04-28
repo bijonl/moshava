@@ -1,7 +1,7 @@
 // Core Colors
 $color-primary:         #0a4d0f;
 $color-secondary:       #D6CC11;
-$color-background:      #ffffff;
+$color-light:           rgb(252, 248, 237); 
 $color-muted-bg:        #f7f7f7;
 $color-accent:          #0077cc;
 $color-accent-hover:    #005fa3;
@@ -27,22 +27,22 @@ $color-muted: #666;
 $link-hover-color: #222; 
 
 // Background Colors
-$body-background: white; 
-$primary-background-color: red; 
-$primary-background-text-color: black; 
-$secondary-background-color: red; 
-$secondary-background-text-color: black; 
+$body-background: $color-light; 
+$primary-background-color: $color-primary; 
+$primary-background-text-color: $color-light; 
+$secondary-background-color: $color-light; 
+$secondary-background-text-color: $color-primary; 
 
 // Button Variables
 $solid-button-background: $color-primary; 
 $solid-button-border-color: $color-primary; 
-$solid-button-text-color: $color-background; 
+$solid-button-text-color: $color-light; 
 $solid-button-padding-horizontal: 16px;
 $solid-button-padding-vertical: 12px;
-$solid-button-border-radius: 30px; 
+$solid-button-border-radius: 5px; 
 $solid-button-min-width: 200px; 
 
-$solid-button-background-hover: $color-background; 
+$solid-button-background-hover: $color-secondary; 
 $solid-button-text-color-hover: $color-primary; 
 $solid-button-border-color-hover: $color-primary; 
 

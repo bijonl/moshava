@@ -7015,13 +7015,13 @@ progress {
 }
 
 .background-primary {
-  color: black;
-  background-color: red;
+  color: rgb(252, 248, 237);
+  background-color: #0a4d0f;
 }
 
 .background-secondary {
-  color: black;
-  background-color: red;
+  color: #0a4d0f;
+  background-color: rgb(252, 248, 237);
 }
 
 .heading-font {
@@ -7062,9 +7062,9 @@ progress {
   display: inline-block;
   background-color: #0a4d0f;
   border: solid 1px #0a4d0f;
-  color: #ffffff;
+  color: rgb(252, 248, 237);
   line-height: 1;
-  border-radius: 30px;
+  border-radius: 5px;
   font-weight: 400;
   min-width: 200px;
   transition: all 0.2s ease-in-out;
@@ -7076,8 +7076,8 @@ progress {
 }
 .pw-solid-button:hover, .pw-solid-button:focus, .pw-solid-button:focus-visible {
   font-weight: 600;
-  border-radius: 30px;
-  background-color: #ffffff;
+  border-radius: 5px;
+  background-color: #D6CC11;
   color: #0a4d0f;
   border: solid 1px #0a4d0f;
   text-decoration: none;
@@ -7085,7 +7085,7 @@ progress {
 .pw-solid-button:focus, .pw-solid-button:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .container {
@@ -7130,7 +7130,7 @@ progress {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(252, 248, 237);
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
