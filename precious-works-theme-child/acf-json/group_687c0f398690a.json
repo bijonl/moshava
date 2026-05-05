@@ -18,8 +18,7 @@
             },
             "choices": {
                 "none": "None",
-                "primary": "Primary",
-                "secondary": "Secondary"
+                "primary": "Primary (Green)"
             },
             "default_value": false,
             "return_format": "value",
@@ -66,5 +65,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755702930
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1778005400
 }

@@ -34,6 +34,7 @@
             }
             .homepage-hero-content-wrapper {
                 padding: 50px; 
+                color: $homepage-hero-color!important; 
              }
             .title-area-container {
                 z-index: 9; 
@@ -60,7 +61,9 @@
                             .h1 {
                                 font-size: $hero-title-size; 
                             }
-                            
+                        }
+                        .subtitle-wrapper {
+                                width: 100%; 
                         }
 
                     }

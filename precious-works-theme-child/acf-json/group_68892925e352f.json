@@ -21,28 +21,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_68efd90f0efd0",
-            "label": "Cards Per Row",
-            "name": "cards_per_row",
-            "aria-label": "",
-            "type": "range",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": 4,
-            "min": 3,
-            "max": 4,
-            "allow_in_bindings": 0,
-            "step": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_6889294d11e9b",
             "label": "Wildcards",
             "name": "wildcards",
@@ -231,6 +209,35 @@
                     "parent_repeater": "field_6889294d11e9b"
                 }
             ]
+        },
+        {
+            "key": "field_69fa35cbb124c",
+            "label": "Border Style",
+            "name": "border_style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no-border": "No Border",
+                "border": "Border"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         }
     ],
     "location": [
@@ -252,5 +259,7 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1760549284
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1778005497
 }

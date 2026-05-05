@@ -12,4 +12,17 @@
         
         }
     }
+    .copyright-wrapper {
+        font-size: 14px; 
+    }
+
+    .footer-logo-col {
+        a, i{
+            text-decoration: none;
+            color: $color-secondary;
+            &:hover {
+                color: $color-light; 
+            }
+        }
+    }
 }

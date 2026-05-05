@@ -16,15 +16,15 @@ $font-secondary: 'Playfair Display', sans-serif;
 $heading-font: $font-secondary; 
 $body-text-font: $font-primary; 
 $paragraph-font: $font-primary; 
-$base-font-size: 16px; 
+$base-font-size: 18px; 
 $line-height-base: 1.6;
 
 // Text Colors
 $base-text-color: #222; 
 $heading-font-color: #222; 
-$link-color: #0066cc; 
+$link-color: $color-primary; 
 $color-muted: #666;
-$link-hover-color: #222; 
+$link-hover-color: $color-secondary; 
 
 // Background Colors
 $body-background: $color-light; 

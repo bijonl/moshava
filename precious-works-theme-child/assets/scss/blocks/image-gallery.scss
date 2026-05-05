@@ -1,0 +1,15 @@
+.image-gallery-col {
+    .glightbox:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+    }
+    img {
+        padding-top: 12px; 
+        padding-bottom: 12px;  
+        transition: all 0.2s ease;
+        &:hover {
+            transition: all 0.2s ease;
+            transform: scale(1.1);
+        }
+    }
+}

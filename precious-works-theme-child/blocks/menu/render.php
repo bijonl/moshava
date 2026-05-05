@@ -37,7 +37,7 @@ if(!$has_content) {
                             <?php foreach($menu_items as $menu_item) { 
 
                                 $item_title = get_field('display_name', $menu_item) ?: get_the_title($menu_item);
-                                $item_description = get_field('item_description', $menu_item);
+                                $item_description = get_field('item_description', $menu_item, false, false);
                                 $desc_id = 'desc-' . $menu_item;
 
                                 $image = get_the_post_thumbnail(
@@ -66,7 +66,7 @@ if(!$has_content) {
                                                 id="<?php echo $desc_id; ?>" 
                                                 class="w-75 mx-auto mb-0"
                                             >
-                                                <?php echo esc_html($item_description); ?>
+                                                <?php echo $item_description; ?>
                                             </p>
                                         <?php } ?>
 

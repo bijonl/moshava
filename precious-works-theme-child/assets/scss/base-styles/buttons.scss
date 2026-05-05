@@ -29,3 +29,9 @@
         border-radius: $solid-button-border-radius;
     }
 }
+
+.background-primary {
+    .pw-solid-button {
+        border-color: white; 
+    }
+}

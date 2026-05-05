@@ -9,15 +9,17 @@
 @import '../../../precious-works-theme-child/assets/scss/base-styles/buttons';
 @import '../../../precious-works-parent/assets/scss/base-styles/container-styling';
 @import '../../../precious-works-parent/assets/scss/base-styles/global-styling';
-@import '../../../precious-works-parent/assets/scss/base-styles/heading-font';
-@import '../../../precious-works-parent/assets/scss/base-styles/typography';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/heading-font';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/typography';
 
 
 @import '../../../precious-works-parent/assets/scss/templates/blog-archive';
 @import '../../../precious-works-parent/assets/scss/templates/blog-single';
 @import '../../../precious-works-theme-child/assets/scss/components/header-navigation';
-@import '../../../precious-works-parent/assets/scss/components/footer';
-@import '../../../precious-works-parent/assets/scss/components/partials/title-area';
+@import '../../../precious-works-theme-child/assets/scss/components/footer';
+@import '../../../precious-works-theme-child/assets/scss/components/partials/title-area';
+@import '../../../precious-works-theme-child/assets/scss/components/simple-calendar';
+
 
 
 @import '../../../precious-works-parent/assets/scss/blocks/reviews-block';
@@ -25,9 +27,9 @@
 @import '../../../precious-works-parent/assets/scss/blocks/accordions';
 @import '../../../precious-works-theme-child/assets/scss/blocks/homepage-hero';
 @import '../../../precious-works-parent/assets/scss/blocks/photo-divider';
-@import '../../../precious-works-parent/assets/scss/blocks/image-gallery';
-@import '../../../precious-works-parent/assets/scss/blocks/interior-hero';
-@import '../../../precious-works-parent/assets/scss/blocks/wildcards';
+@import '../../../precious-works-theme-child/assets/scss/blocks/image-gallery';
+@import '../../../precious-works-theme-child/assets/scss/blocks/interior-hero';
+@import '../../../precious-works-theme-child/assets/scss/blocks/wildcards';
 @import '../../../precious-works-theme-child/assets/scss/blocks/menu';
 
 

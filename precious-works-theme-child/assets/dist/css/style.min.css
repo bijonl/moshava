@@ -120,11 +120,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0066cc;
-  --bs-link-color-rgb: 0, 102, 204;
+  --bs-link-color: #0a4d0f;
+  --bs-link-color-rgb: 10, 77, 15;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #222;
-  --bs-link-hover-color-rgb: 34, 34, 34;
+  --bs-link-hover-color: #D6CC11;
+  --bs-link-hover-color-rgb: 214, 204, 17;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -7086,6 +7086,10 @@ progress {
   border-radius: 5px;
 }
 
+.background-primary .pw-solid-button {
+  border-color: white;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -7130,7 +7134,7 @@ progress {
 body {
   background-color: rgb(252, 248, 237);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #222;
 }
@@ -7152,14 +7156,14 @@ html :where(.wp-block) {
 
 h1, .h1 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
   font-family: "Playfair Display", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -7203,11 +7207,11 @@ p {
 }
 
 a {
-  color: #0066cc;
-  text-decoration: none;
+  color: #0a4d0f;
+  text-decoration: underline;
 }
 a:hover, a:focus {
-  color: #222;
+  color: #D6CC11;
   text-decoration: underline;
 }
 
@@ -7540,7 +7544,7 @@ small, .small {
 .site-footer .site-footer-content-container .site-footer-content-row .social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   list-style: none;
   margin-bottom: 0;
 }
@@ -7558,14 +7562,29 @@ small, .small {
 .site-footer .site-footer-content-container .site-footer-content-row .social-list li a i {
   font-size: 26px;
 }
+.site-footer .site-footer-content-container .site-footer-content-row .social-list li a:hover {
+  color: #D6CC11;
+}
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
   max-width: 100px;
+}
+.site-footer .copyright-wrapper {
+  font-size: 14px;
+}
+.site-footer .footer-logo-col a, .site-footer .footer-logo-col i {
+  text-decoration: none;
+  color: #D6CC11;
+}
+.site-footer .footer-logo-col a:hover, .site-footer .footer-logo-col i:hover {
+  color: rgb(252, 248, 237);
 }
 
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 60px;
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper {
+  font-size: 20px;
+  width: 50%;
   padding-top: 15px;
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper p {
@@ -7574,6 +7593,33 @@ small, .small {
 
 .button-row {
   margin-top: 30px;
+}
+
+.simcal-month, .simcal-default-calendar-grid > table tbody td {
+  border: solid 2px #0a4d0f;
+}
+
+.simcal-calendar-list {
+  width: 75%;
+  margin: auto;
+}
+.simcal-calendar-list .simcal-event-title {
+  font-size: 24px;
+}
+.simcal-calendar-list .simcal-event-start.simcal-event-start-date,
+.simcal-calendar-list .simcal-event-start.simcal-event-start-time,
+.simcal-calendar-list .simcal-event-end.simcal-event-end-time {
+  font-weight: 700;
+  font-size: 18px;
+}
+.simcal-calendar-list .simcal-event-address.simcal-event-start-location {
+  display: flex;
+  width: 50%;
+  font-size: 18px;
+}
+
+.simcal-default-calendar-grid .simcal-events {
+  font-size: 1em;
 }
 
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card {
@@ -7685,6 +7731,7 @@ small, .small {
 }
 .homepage-hero-section .homepage-hero-container.split-hero .homepage-hero-content-wrapper {
   padding: 50px;
+  color: white !important;
 }
 .homepage-hero-section .homepage-hero-container.split-hero .title-area-container {
   z-index: 9;
@@ -7707,6 +7754,9 @@ small, .small {
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
   font-size: 65px;
 }
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .subtitle-wrapper {
+  width: 100%;
+}
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {
   text-align: center;
 }
@@ -7723,6 +7773,11 @@ small, .small {
 .image-gallery-col img {
   padding-top: 12px;
   padding-bottom: 12px;
+  transition: all 0.2s ease;
+}
+.image-gallery-col img:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.1);
 }
 
 .interior-hero-section {
@@ -7736,18 +7791,20 @@ small, .small {
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper {
   background-color: transparent;
+  border-bottom: double 5px #0a4d0f;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper {
-  width: 50%;
+  width: 75%;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .big-title-wrapper {
   margin-bottom: 25px;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .subtitle-wrapper {
+  width: 100%;
   margin-bottom: 25px;
 }
 @media (max-width: 575.98px) {
@@ -7768,6 +7825,13 @@ small, .small {
   }
 }
 
+.wildcards-section .wildcards-container.wc-border .wildcards-col {
+  border-style: double;
+  border-color: #0a4d0f;
+  padding: 20px;
+  border-width: 15px;
+  border-radius: 15px;
+}
 @media (max-width: 991.98px) {
   .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
     padding-bottom: 40px;

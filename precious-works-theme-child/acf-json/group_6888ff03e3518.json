@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6888ff1a0a8f6",
-            "label": "Footer Logo",
+            "label": "Contact Info",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -21,11 +21,11 @@
             "selected": 0
         },
         {
-            "key": "field_6888ff040a8f5",
-            "label": "Footer Logo",
-            "name": "footer_logo",
+            "key": "field_69fa2c3c37b8c",
+            "label": "Phone Number",
+            "name": "phone_number",
             "aria-label": "",
-            "type": "image",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,17 +34,12 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
+            "default_value": "",
+            "maxlength": "",
             "allow_in_bindings": 0,
-            "preview_size": "medium"
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_6888ff421268f",
@@ -294,5 +289,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753819207
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1778003043
 }
