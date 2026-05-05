@@ -1,0 +1,32 @@
+.food-menu-container {
+    .food-menu-row {
+        .food-menu-col {
+            border: solid 2px $color-primary;
+            border-radius: 15px; 
+            .menu-section-title-wrapper {
+                padding-bottom: 30px; 
+                padding-top: 30px; 
+            }
+            .menu-section-wrapper {
+                justify-content: center; 
+                border-bottom: solid 1px lightgrey; 
+                
+                &:last-child 
+                {
+                    border-bottom: 0; 
+                    padding-bottom: 0; 
+                }
+                .single-menu-item  {
+                    flex: 0 0 33.3333%;
+                    padding-bottom: 30px; 
+                    figure {
+                        width: 200px;
+                        img {
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

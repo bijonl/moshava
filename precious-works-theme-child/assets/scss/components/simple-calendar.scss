@@ -1,0 +1,25 @@
+.simcal-month, .simcal-default-calendar-grid>table tbody td {
+    border: solid 2px $color-primary; 
+}
+
+.simcal-calendar-list  {
+    width: 75%; 
+    margin: auto; 
+    .simcal-event-title {
+        font-size: 24px; 
+    }
+    .simcal-event-start.simcal-event-start-date, 
+    .simcal-event-start.simcal-event-start-time, 
+    .simcal-event-end.simcal-event-end-time
+    {
+        font-weight: 700;
+        font-size: 18px; 
+    }
+    .simcal-event-address.simcal-event-start-location {
+        display: flex; 
+        width: 50%; 
+        font-size: 18px; 
+
+    }
+
+}

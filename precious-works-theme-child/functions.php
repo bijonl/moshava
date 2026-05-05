@@ -7,6 +7,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $theme = wp_get_theme();
 define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 
+require_once get_stylesheet_directory() . '/includes/custom-post-types/menu-items.php';
+
+add_image_size('square', 400, 400, true); 
 
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );
@@ -48,3 +51,22 @@ function moshava_enqueue_fonts() {
     );
 }
 add_action('wp_enqueue_scripts', 'moshava_enqueue_fonts');
+
+function pw_disable_menu_gutenberg( $use_block_editor, $post ) {
+
+    // Example: Disable Gutenberg for a specific page template
+    if ( $post && get_post_type( $post->ID ) === 'menu_items' ) {
+
+        // Also remove the classic editor support to fully hide the editor
+        remove_post_type_support( 'page', 'editor' );
+
+        // Return false to disable Gutenberg
+        return false;
+    }
+
+    // Otherwise, use the default editor
+    return $use_block_editor;
+}
+
+// Apply the filter for Gutenberg editor usage
+add_filter( 'use_block_editor_for_post', 'pw_disable_menu_gutenberg', 10, 2 );
