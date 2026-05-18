@@ -13,3 +13,27 @@
         }
     }
 }
+
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: $color-primary;
+    text-transform: uppercase;
+    padding: 9px 12px;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+
+.glide__arrow:hover {
+    border-color: $color-primary;
+}

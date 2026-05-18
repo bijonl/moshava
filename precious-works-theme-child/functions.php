@@ -18,7 +18,7 @@ function pw_enqueue_scripts() {
     // wp_enqueue_style( 'pw-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', ['parent-style'], PW_THEME_CHILD_VERSION );
     
     // JS if needed
-    wp_enqueue_script( 'pw-main', get_template_directory_uri()  . '/assets/js/main.js', [], PW_THEME_CHILD_VERSION, true );
+    wp_enqueue_script( 'pw-main', get_stylesheet_directory_uri()  . '/assets/js/main.js', [], PW_THEME_CHILD_VERSION, true );
 
       // Font Awesome 6 CDN (replace with your preferred version if needed)
     wp_enqueue_style(
@@ -70,3 +70,31 @@ function pw_disable_menu_gutenberg( $use_block_editor, $post ) {
 
 // Apply the filter for Gutenberg editor usage
 add_filter( 'use_block_editor_for_post', 'pw_disable_menu_gutenberg', 10, 2 );
+
+function theme_enqueue_glide_styles() {
+      // Glide CSS
+    wp_enqueue_style(
+        'glide-core',
+        'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css',
+        array(),
+        '3.6.0'
+    );
+
+    wp_enqueue_style(
+        'glide-theme',
+        'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css',
+        array('glide-core'),
+        '3.6.0'
+    );
+
+    // Glide JS
+    wp_enqueue_script(
+        'glide-js',
+        'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js',
+        array(),
+        '3.6.0',
+        true
+    );
+}
+
+add_action('wp_enqueue_scripts', 'theme_enqueue_glide_styles');
