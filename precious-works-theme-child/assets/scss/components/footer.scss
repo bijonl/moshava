@@ -17,6 +17,10 @@
     }
 
     .footer-logo-col {
+        @include media-breakpoint-down(sm) {
+            padding-top: 20px; 
+            font-size: 34px;
+        }
         a, i{
             text-decoration: none;
             color: $color-secondary;

@@ -4,6 +4,10 @@
     justify-content: end; 
     list-style: none;
     margin-bottom: 0; 
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px; 
+        justify-content: center;
+    }
     li {
         padding-right: 25px; 
         a {

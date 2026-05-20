@@ -8,15 +8,15 @@ $phone_number = get_field('phone_number', 'options');
 <footer class="site-footer" role="contentinfo">
     <div class="site-footer-content-container container">
         <div class="site-footer-content-row row align-items-center">
-            <div class="footer-copyright-col col text-start">
+            <div class="footer-copyright-col col-sm text-center text-sm-start">
                 <?php include locate_template('components/footer/copyright.php'); ?>
             </div>
-            <div class="footer-logo-col col text-center">
+            <div class="footer-logo-col col-sm text-center">
                 <i class="fa-solid fa-phone"></i>
                 <a href="<?php echo 'tel:'.$phone_number ?>" ><?php echo $phone_number ?></a>
             </div>
             <?php if (have_rows('social_media_footer', 'options')) { ?>
-                <nav class="footer-social-col col" role="navigation" aria-label="Social Media Links">
+                <nav class="footer-social-col col-sm" role="navigation" aria-label="Social Media Links">
                     <?php include locate_template('components/footer/social-icons.php'); ?>
                 </nav>
             <?php }; ?>

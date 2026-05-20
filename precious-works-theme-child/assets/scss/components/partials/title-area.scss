@@ -17,6 +17,9 @@ $button-row-spacing: 30px;
                     p {
                         margin-bottom: 0; 
                     }
+                    @include media-breakpoint-down(lg) {
+                        width: 100%; 
+                    }
                 }
             }
         }

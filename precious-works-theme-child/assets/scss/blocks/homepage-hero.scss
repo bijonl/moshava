@@ -16,8 +16,17 @@
     }
     .split-hero-bg-container {
         .split-column-bg {
+            &.first-image {
+                @include media-breakpoint-down(sm) {
+                    background-position: center center;
+                }
+
+            }
             &.second-image {
                 left: auto; 
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
             }
         }
     }
@@ -60,10 +69,16 @@
                          .title-wrapper {
                             .h1 {
                                 font-size: $hero-title-size; 
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 40px; 
+                                }
                             }
                         }
                         .subtitle-wrapper {
                                 width: 100%; 
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 24px; 
+                                }
                         }
 
                     }

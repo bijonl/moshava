@@ -105,11 +105,13 @@
             &:checked ~ .menu__btn > span::before {
               top: 0;
               transform: rotate(0);
+              background-color: black;
             }
 
             &:checked ~ .menu__btn > span::after {
               top: 0;
               transform: rotate(90deg);
+              background-color: black;
             }
 
             // Slide in the mobile nav

@@ -42,4 +42,14 @@
             }
         }
     }
+   .glide__arrow.glide__arrow--left {
+        @include media-breakpoint-down(sm) {
+            left: 0
+        }
+   }
+   .glide__arrow.glide__arrow--right {
+        @include media-breakpoint-down(sm) {
+            right: 0
+        }
+   }
 }

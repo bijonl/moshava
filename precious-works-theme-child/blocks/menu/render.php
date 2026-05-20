@@ -13,7 +13,7 @@ if(!$has_content) {
   <?php if(have_rows('menu_section')) { ?>
     <section class="food-menu-container container" aria-label="Food Menu">
         <div class="food-menu-row row">
-            <div class="col-sm-8 mx-auto food-menu-col">
+            <div class="col-lg-8 mx-auto food-menu-col">
 
                 <?php while(have_rows('menu_section')) { 
                     the_row(); 

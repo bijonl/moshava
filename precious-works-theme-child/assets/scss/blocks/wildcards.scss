@@ -11,11 +11,12 @@
         }
         .wildcards-row {
             .wildcards-col {
+                @include media-breakpoint-down(lg) {
+                        margin-bottom: 40px; 
+                }
              
                 .single-wildcard-wrapper {
-                    @include media-breakpoint-down(lg) {
-                        padding-bottom: 40px; 
-                    }
+                   
                     .wildcard-image-wrapper {
                         margin: auto;
                         padding-bottom: $wildcard-element-spacing; 

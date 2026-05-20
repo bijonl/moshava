@@ -11,7 +11,7 @@
                     $full_image_url = wp_get_attachment_url($image_id);
                 ?>
                     <div class="glide__slide image-gallery-col col columns-<?php echo esc_attr($number_of_columns); ?>" role="listitem">
-                        <figure class="gallery-image w-50 mx-auto mb-4">
+                        <figure class="gallery-image w-sm-50 mx-auto mb-4">
                             <a 
                                 href="<?php echo esc_url($full_image_url); ?>" 
                                 class="glightbox" 
