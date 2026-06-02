@@ -60,7 +60,7 @@ document.addEventListener("scroll", function () {
 });
 
 
-document.querySelectorAll('.glide').forEach((slider) => {
+document.querySelectorAll('.image-gallery-section .glide').forEach((slider) => {
     new Glide(slider, {
         perView: 3,
         type: 'carousel',
