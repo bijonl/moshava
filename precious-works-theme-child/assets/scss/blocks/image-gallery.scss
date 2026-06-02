@@ -37,3 +37,9 @@
 .glide__arrow:hover {
     border-color: $color-primary;
 }
+
+.glide__slide.image-gallery-col {
+    figure {
+        // width: 50%; 
+    }
+}

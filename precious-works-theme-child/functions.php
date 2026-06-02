@@ -10,6 +10,8 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 require_once get_stylesheet_directory() . '/includes/custom-post-types/menu-items.php';
 
 add_image_size('square', 400, 400, true); 
+add_image_size('landscape', 800, 600, true); 
+
 
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );

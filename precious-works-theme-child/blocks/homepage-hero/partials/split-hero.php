@@ -1,9 +1,16 @@
 
 
 <section <?php echo pw_block_section_classes($block) ?>>
+    <div class="overlay image-overlay d-block d-sm-none"></div>
     <div class="d-flex split-hero-bg-container">
-        <div class="split-column-bg first-image w-sm-50 overlay" style="background-image: url('<?php echo $image_url ?>')"></div>
-        <div class="split-column-bg second-image w-50 overlay" style="background-image: url('<?php echo $second_column_image_url ?>')"></div>
+        <div class="split-column-bg first-image w-sm-50 overlay" 
+        style="background-image: url('<?php echo $image_url ?>'); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center center; 
+        "
+
+        ></div>
     </div>
 
     <div class="split-hero homepage-hero-container container h-100">

@@ -61,7 +61,17 @@ document.addEventListener("scroll", function () {
 
 
 document.querySelectorAll('.glide').forEach((slider) => {
-    new Glide(slider).mount();
+    new Glide(slider, {
+        perView: 3,
+        type: 'carousel',
+        autoplay: 2000,
+        gap: 30,
+        breakpoints: {
+            768: {
+                perView: 1
+            }
+        }
+    }).mount();
 });
 
 document.querySelectorAll('.review-glide').forEach((slider) => {

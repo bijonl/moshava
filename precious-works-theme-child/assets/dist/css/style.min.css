@@ -7752,6 +7752,11 @@ small, .small {
   padding-top: 0;
   padding-bottom: 0;
 }
+@media (max-width: 575.98px) {
+  .homepage-hero-section.block-section {
+    height: 40vh;
+  }
+}
 .homepage-hero-section .image-overlay {
   background-color: black;
   opacity: 0.5;
@@ -7780,9 +7785,20 @@ small, .small {
   border-radius: 25px;
   border: solid 7px #D6CC11;
 }
+@media (max-width: 575.98px) {
+  .homepage-hero-section .homepage-hero-container.split-hero .overlay {
+    background-color: transparent;
+  }
+}
 .homepage-hero-section .homepage-hero-container.split-hero .homepage-hero-content-wrapper {
   padding: 50px;
   color: white !important;
+}
+@media (max-width: 575.98px) {
+  .homepage-hero-section .homepage-hero-container.split-hero .homepage-hero-content-wrapper {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
 }
 .homepage-hero-section .homepage-hero-container.split-hero .title-area-container {
   z-index: 9;
@@ -7799,6 +7815,9 @@ small, .small {
   background-color: #D6CC11;
   color: rgb(10, 58, 5);
 }
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
+  text-align: center;
+}
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
   padding-bottom: 30px;
 }
@@ -7807,7 +7826,7 @@ small, .small {
 }
 @media (max-width: 575.98px) {
   .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .subtitle-wrapper {
@@ -7815,7 +7834,7 @@ small, .small {
 }
 @media (max-width: 575.98px) {
   .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .subtitle-wrapper {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {

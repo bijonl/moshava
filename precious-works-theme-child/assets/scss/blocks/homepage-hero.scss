@@ -8,6 +8,9 @@
     &.block-section {
         padding-top: 0; 
         padding-bottom: 0; 
+        @include media-breakpoint-down(sm) {
+            height: 40vh; 
+        }
     }
     .image-overlay {
         background-color: $image-overlay-bg;
@@ -39,11 +42,18 @@
                 background-color: $color-primary; 
                 border-radius: 25px; 
                 border: solid 7px $color-secondary; 
+                @include media-breakpoint-down(sm) {
+                    background-color: transparent; 
+                }
 
             }
             .homepage-hero-content-wrapper {
                 padding: 50px; 
                 color: $homepage-hero-color!important; 
+                @include media-breakpoint-down(sm) {
+                    padding: 10px; 
+                    padding-bottom: 20px; 
+                }
              }
             .title-area-container {
                 z-index: 9; 
@@ -64,20 +74,22 @@
         .homepage-hero-row {
             .homepage-hero-col {
                 .homepage-hero-content-wrapper {
+                    text-align: center;
                     .title-area-content-wrapper {
                         padding-bottom: 30px; 
                          .title-wrapper {
                             .h1 {
+                               
                                 font-size: $hero-title-size; 
                                 @include media-breakpoint-down(sm) {
-                                    font-size: 40px; 
+                                    font-size: 32px; 
                                 }
                             }
                         }
                         .subtitle-wrapper {
                                 width: 100%; 
                                 @include media-breakpoint-down(sm) {
-                                    font-size: 24px; 
+                                    font-size: 18px; 
                                 }
                         }
 

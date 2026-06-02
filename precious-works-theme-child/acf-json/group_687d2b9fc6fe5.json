@@ -136,40 +136,6 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_69f0bab9dfdf8",
-            "label": "Second Column Image",
-            "name": "second_column_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "<p>Upload a large, wide image that looks good behind text.<\/p>\r\n\r\n<ul>\r\n  <li><strong>Use a clear, high-quality image<\/strong><\/li>\r\n  <li><strong>Make sure it’s wide<\/strong> (like a banner)<\/li>\r\n  <li><strong>Choose something simple<\/strong>—not too busy<\/li>\r\n<\/ul>\r\n\r\n<p><em>Good examples:<\/em> sky, landscape, texture, wall, etc.<\/p>",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_69f0ba76dfdf6",
-                        "operator": "==",
-                        "value": "split"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
-        },
-        {
             "key": "field_687d2bdd162f3",
             "label": "Homepage Hero Content End",
             "name": "",
@@ -206,5 +172,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1777384244
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1780410508
 }
